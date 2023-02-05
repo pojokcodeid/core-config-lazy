@@ -154,7 +154,7 @@ git clone https://github.com/pojokcodeid/core-config-lazy.git ~/.config/nvim
 ## Panduam Windows 
 ## Kebutuhan Dasar
 
-1. Install Neovim 8.0+ https://github.com/neovim/neovim/releases/tag/v0.8.2
+1. Install Neovim 8.0+ https://github.com/neovim/neovim/releases/tag/v0.8.3
 2. C++ (windows) Compiler https://www.msys2.org/
 3. GIT https://git-scm.com/download/win
 4. NodeJs https://nodejs.org/en/
@@ -163,3 +163,7 @@ git clone https://github.com/pojokcodeid/core-config-lazy.git ~/.config/nvim
 7. Nerd Font https://github.com/ryanoasis/nerd-fonts
 8. Windows Terminal (Windows) https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-id&gl=id
 9. Powershell (windows) https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=en-id&gl=id
+
+```
+git clone https://github.com/pojokcodeid/core-config-lazy.git "$env:LOCALAPPDATA\nvim"
+```
