@@ -45,7 +45,7 @@ sudo dnf install nano
 cd ../
 nano .bashrc
 ```
-masukan path 
+- masukan path 
 ```
 export PATH=/home/asep/nodejs/bin:$PATH
 ctrl + x
