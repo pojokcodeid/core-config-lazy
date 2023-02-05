@@ -2,7 +2,7 @@
 ## Kebutuhan Dasar
 ### Linux (Fedora)
 1. Acess Root
-```
+```bash
 visudo
 [nama user] ALL=(ALL:ALL) ALL
 [nama user] ALL=(ALL) NOPASSWD:ALL
@@ -22,7 +22,7 @@ sudo dnf install wget
 wget https://nodejs.org/dist/v18.13.0/node-v18.13.0-linux-x64.tar.xz
 ```
 - Install unzip dan xz
-```
+```bash
 sudo dnf install unzip
 sudo dnf install xz
 sudo apt install xz-utils
@@ -36,17 +36,17 @@ tar -xf [nama file node js tadi di download]
 mv [nama file extrak] [nama tujuan]
 ```
 - copy folder ke home 
-```
+```bash
 cp -r [nama folder] /home/asep/
 ```
 - daftarkan env
-```
+```bash
 sudo dnf install nano
 cd ../
 nano .bashrc
 ```
 - masukan path 
-```
+```bash
 export PATH=/home/asep/nodejs/bin:$PATH
 ctrl + x
 y
@@ -58,7 +58,7 @@ sudo dnf install git
 ```
 4 Install Neovim
 - download neovim
-```
+```bash
 cd download
 wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz
 tar -xf nvim-linux64.tar.gz
@@ -66,20 +66,20 @@ mv nvim-linux64 nvim
 cp -r nvim /home/asep/
 ```
 - register path
-```
+```bash
 cd ../
 nano .bashrc
 export PATH=/home/asep/nvim/bin:$PATH
 ```
 5 Install GCC dan G++
-```
+```bash
 sudo dnf install gcc
 sudo dnf install g++
 ```
 ### Linux (Debian Base)
 - Pastikan Akun Sudah Administrator
 
-```
+```bash
 visudo
 [nama user] ALL=(ALL:ALL) ALL
 [nama user] ALL=(ALL) NOPASSWD:ALL
@@ -87,7 +87,7 @@ visudo
 
 - Lakukan install Neovim
 
-```
+```bash
 sudo apt-get install wget
 mkdir download
 cd download
@@ -98,7 +98,7 @@ nvim --version
 
 - Check ketersediaan GCC
 
-```
+```bash
 sudo apt-get install gcc
 sudo apt-get install g++
 gcc --version
@@ -106,14 +106,14 @@ gcc --version
 
 - Install git
 
-```
+```bash
 sudo apt-get install git
 git --version
 ```
 
 - Install NodeJS
 
-```
+```bash
 sudo apt-get install curl
 sudo apt install build-essential libssl-dev
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -125,21 +125,21 @@ npm --version
 
 - Install unzip, ripgrep
 
-```
+```bash
 sudo apt-get install unzip
 sudo apt-get install ripgrep
 ```
 
 - Install Lazygit
 
-```
+```bash
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' |  sed -E 's/.*"v*([^"]+)".*/\1/')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 lazygit --version
 ```
 ### Arch Linux
-```
+```bash
 sudo pacman -S git
 sudo pacman -Sy nodejs
 sudo pacman -S npm
