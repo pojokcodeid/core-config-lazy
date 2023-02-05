@@ -60,7 +60,7 @@ sudo dnf install git
 - download neovim
 ```
 cd download
-wget https://github.com/neovim/neovim/releases/download/v0.8.2/nvim-linux64.tar.gz
+wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.tar.gz
 tar -xf nvim-linux64.tar.gz
 mv nvim-linux64 nvim
 cp -r nvim /home/asep/
