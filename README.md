@@ -1,6 +1,6 @@
 # core-config-lazy
 ## Kebutuhan Dasar
-### LInux (Fedora)
+### Linux (Fedora)
 1. Acess Root
 ```
 visudo
@@ -76,9 +76,65 @@ export PATH=/home/asep/nvim/bin:$PATH
 sudo dnf install gcc
 sudo dnf install g++
 ```
-# Clone config Neovim
+### Linux (Debian Base)
+- Pastikan Akun Sudah Administrator
+
 ```
-git clone https://github.com/pojokcodeid/nvim-lazy.git ~/.config/nvim
+visudo
+[nama user] ALL=(ALL:ALL) ALL
+[nama user] ALL=(ALL) NOPASSWD:ALL
+```
+
+- Lakukan install Neovim
+
+```
+sudo apt-get install wget
+mkdir download
+cd download
+wget https://github.com/neovim/neovim/releases/download/v0.8.3/nvim-linux64.deb
+sudo apt-get install ./nvim-linux64.deb
+nvim --version
+```
+
+- Check ketersediaan GCC
+
+```
+gcc --version
+```
+
+- Install git
+
+```
+sudo apt-get install git
+git --version
+```
+
+- Install NodeJS
+
+```
+sudo apt-get install curl
+sudo apt install build-essential libssl-dev
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+nvm install 18.12.1
+node --version
+npm --version
+```
+
+- Install unzip, ripgrep
+
+```
+sudo apt-get install unzip
+sudo apt-get install ripgrep
+```
+
+- Install Lazygit
+
+```
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' |  sed -E 's/.*"v*([^"]+)".*/\1/')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
+lazygit --version
 ```
 
 
