@@ -21,25 +21,25 @@ sudo dnf install wget
 ```
 wget https://nodejs.org/dist/v18.13.0/node-v18.13.0-linux-x64.tar.xz
 ```
-d. Install unzip dan xz
+- Install unzip dan xz
 ```
 sudo dnf install unzip
 sudo dnf install xz
 sudo apt install xz-utils
 ```
-e. Extrak file downloadan 
+- Extrak file downloadan 
 ```
 tar -xf [nama file node js tadi di download]
 ```
-f. rename file extrac tadi 
+- rename file extrac tadi 
 ```
 mv [nama file extrak] [nama tujuan]
 ```
-g. copy folder ke home 
+- copy folder ke home 
 ```
 cp -r [nama folder] /home/asep/
 ```
-h. daftarkan env
+- daftarkan env
 ```
 sudo dnf install nano
 cd ../
@@ -57,7 +57,7 @@ enter
 sudo dnf install git
 ```
 4 Install Neovim
-a. download neovim
+- download neovim
 ```
 cd download
 wget https://github.com/neovim/neovim/releases/download/v0.8.2/nvim-linux64.tar.gz
@@ -65,7 +65,7 @@ tar -xf nvim-linux64.tar.gz
 mv nvim-linux64 nvim
 cp -r nvim /home/asep/
 ```
-b. register path
+- register path
 ```
 cd ../
 nano .bashrc
