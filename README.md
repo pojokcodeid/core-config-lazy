@@ -138,12 +138,6 @@ lazygit --version
 ```
 
 
-
-lik panduan <br>
-https://github.com/pojokcodeid/theme-linux/blob/main/fedora/config-neovim.md
-### Linux Debian
-https://github.com/pojokcodeid/nvim-lazy#readme
-### Clone Basic Config
 ```
 git clone https://github.com/pojokcodeid/core-config-lazy.git ~/.config/nvim
 ```
